@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2 {
+    font-size: 5rem;
+    margin: 2.5rem;
+}
+
+.container {
+    margin: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+button {
+    padding: 1rem 2rem;
+    margin: 0 1.53rem;
+    font-size: 1.7rem;
+    background: none;
+    border-radius: 2rem;
+    font-weight: 600;
+}
