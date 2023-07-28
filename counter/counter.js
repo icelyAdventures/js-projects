@@ -24,8 +24,10 @@ btns.forEach(function(btn) {
 
         if(count > 0){
             counter.style.color = "green"
-        } else {
+        } else if(count < 0){
             counter.style.color = "red"
+        } else {
+            counter.style.color = "#000"
         }
         counter.textContent = count
     })
