@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Calibri", sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #e5f3f3;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 2rem;
+    margin: 1rem;
+    color: #d1a40e;
+}
+
+.questions-box {
+    width: 50rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem #a0a0a0;
+    margin: 2rem;
+}
+
+.questions-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 1rem 0 1rem;
+}
+
+
+.questions-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.questions-btn .fa-plus:hover {
+    transition: all 0.3s linear;
+    transform: rotate(90deg);
+}
+
+.questions-btn .fa-minus:hover {
+    transition: all 0.3s linear;
+    transform: rotate(90deg);
+}
+
+
+.questions-btn .fa-plus,
+.questions-btn .fa-minus {
+    border: 0.3rem solid #d1a40e;
+    font-size: 1.3rem;
+    color: #d1a40e;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.questions-btn .fa-plus {
+    transition: all 0.3s linear;
+}
+
+.questions-btn .fa-minus {
+    display: none;
+    transition: all 0.3s linear;
+}
+
+.questions-answer {
+    display: none;
+    margin: 1rem;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+
+.questions-answer hr {
+    margin: 1rem auto 1rem auto;
+}
+
+.questions-answer p {
+    /* font-family: "Arial", ; */
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.show-text .questions-answer{
+    display: block;
+    transition: all 0.5s linear;
+}
+
+
+.show-text .fa-plus {
+    display: none;
+}
+
+.show-text .fa-minus {
+    display: block;
+}
