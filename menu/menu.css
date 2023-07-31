@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background: #112abc; */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    margin: 5rem auto;
+}
+
+.menu .header {
+    margin-top: 2rem;
+
+}
+
+.header h1 {
+    /* margin: 5rem auto 1rem auto; */
+    font-size: 3rem;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+.header hr {
+    margin: 1rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    width: 6rem;
+    height: 0.4rem;
+    border: none;
+    background: #faa200;
+    position: relative;
+    left: 38%;
+}
+
+.header .filter {
+    /* background: #c5c5c5; */
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.filter .filter-btn{
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.15rem solid #faa200;
+    background: transparent;
+    color: #faa200;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.filter .filter-btn:hover {
+    background: #faa200;
+    color: #fff;;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: 2fr auto;
+}
+
+.items-container .items {
+    display: flex;
+    transition: 0.5s;
+    margin: 1rem;
+    border-radius: 0.4rem;
+}
+
+.items-container .items:hover{
+    cursor: pointer;
+    box-shadow: 1rem 1.1rem 1rem #7c7a7a;
+    background: #faa200;
+    color: #fff;
+}
+
+.items-container .items:hover,
+.items-container .price:hover {
+    color: #fff;
+}
+
+.items-container img {
+    height: 10rem;
+    width: 10rem;
+    border: 0.3rem solid #faa200;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 1rem ;
+    object-fit: cover;
+}
+
+.items-container .item-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem 0 0.5rem;
+    letter-spacing: 0.05rem;
+    padding: 0 0.6rem;
+}
+
+.items-container .price {
+    color: #f77e06;
+}
+
+.items-container .items-info{
+    width: 20rem;
+    height: 10rem;
+}
+
+.items-info .items-description {
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+.items-description p {
+    text-align: left;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+.hide-items {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        scroll-behavior: smooth;
+    }
+    .menu {
+        width: 100%;
+    }
+    
+    
+    .items-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
