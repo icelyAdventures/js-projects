@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.section-center {
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-family: "Roboto", sans-serif;
+    background: url("./bg.jpg") no-repeat center;
+    background-size: cover;
+    /* background: linear-gradient(30deg, #ffffff,20%, #ae6dbe, 80%, #6d0786); */
+}
+
+.section-center img {
+    width: 50rem;
+    box-shadow: 0 0 1rem 0.51rem #666565;
+}
+
+.section-center .gift-info {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 2rem; */
+    width: 50rem;
+}
+
+.gift-info h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ae6dbe;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.gift-info h2 {
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    color: #301038;
+}
+
+.gift-info p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-family: "Open Sans";
+}
+
+.gift-info .deadline {
+    display: flex;
+    place-items: center;
+}
+
+
+.gift-info .deadline div {
+    background: #5d0374;
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.gift-info .deadline h4 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+.gift-info .deadline .expired {
+    background: #ff0000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .section-center {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url("./bg.jpg") no-repeat center;
+        background-size: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-center .gift-img {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+    
+
+    .section-center .gift-info {
+        width: 80%;
+    }
+
+    .section-center .gift-info h1{
+        text-align: center;
+    }
+
+    .section-center .gift-info h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .section-center .gift-info p {
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .section-center .deadline {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .gift-info .deadline div {
+        background: #5d0374;
+        width: 2.2rem;
+        height: 2.2rem;
+        color: #fff;
+        margin: 0.1rem 0.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .gift-info .deadline h4 {
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .section-center {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url("./bg.jpg") no-repeat center;
+        background-size: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-center img {
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+    
+
+    .section-center .gift-info {
+        width: 80%;
+    }
+
+    .section-center .gift-info h1{
+        text-align: center;
+    }
+
+    .section-center .gift-info h2{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .section-center .gift-info p {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 0.5rem;
+    }
+
+    .section-center .deadline {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ccf8fa;
+}
+
+.section-container {
+    min-width: 40%;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    box-shadow: 0 0 1rem #000;
+}
+
+
+.section-container .grocery-form {
+    width: 50rem;
+    /* background: #f1cbcb; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container .grocery-form .alert {
+    margin: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+}
+
+.section-container .grocery-form .alert-danger {
+    color: #dd1305;
+    background: #e9a9a5;
+}
+
+.section-container .grocery-form .alert-success {
+    color: #155724;
+    background: #cfffda;
+}
+
+.section-container .grocery-form .alert-edit {
+    color: #dd9905;
+    background: #d8c498;
+}
+
+.section-container .grocery-form h1 {
+    font-size: 3rem;
+    margin: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.section-container .grocery-form .form-control {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0;
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+.form-control input {
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    border: none;
+    background: #c4e2eb;
+}
+
+.form-control .submit-btn {
+    font-size: 1rem;
+    padding: 0.2rem 0.8rem;
+    border: none;
+    background: #4ec2f0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border-radius: 0 0.3rem 0.3rem 0;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: capitalize;
+    min-width: 5rem;
+}
+
+.form-control .submit-btn:hover {
+    background: #0f4a97;
+    color: #fff;
+}
+
+.form-control .editing {
+    background: #dd9905;
+    color: #fff;
+}
+
+
+.section-container .grocery-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0s;
+    visibility: hidden;
+}
+
+.section-container .show-container {
+    visibility: visible;
+}
+
+
+.grocery-container .grocery-list {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.grocery-container .grocery-item {
+    background: rgba(209, 250, 240, 0.781);
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    transition: 0.5s;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.grocery-container .grocery-item:hover {
+    background: rgba(255, 253, 138, 0.781);
+}
+
+.grocery-item button {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.2rem 0.3rem;
+    transition: 0.5s;
+}
+
+.grocery-item .edit-btn {
+    color: #dd9905;
+    background: none;
+}
+
+.grocery-item .edit-btn:hover {
+    background: #dd9905;
+    color: #fff;
+}
+
+.grocery-item .delete-btn {
+    color: #dd1305;
+    background: none;
+}
+
+.grocery-item .delete-btn:hover {
+    background: #dd1305;
+    color: #fff;
+}
+
+.grocery-item .check-btn {
+    color: #03b90c;
+    background: none;
+}
+
+.grocery-item .check-btn:hover {
+    background: #03b90c;
+    color: #fff;
+}
+
+
+.grocery-container .clear-btn {
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    color: #dd1305;
+    background: #fff;
+    border: 0.1rem solid #dd1305;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.5rem #dd1305;
+    padding: 0.8rem 1rem;
+    width: 15rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+
+.grocery-container .clear-btn:hover {
+    background: #dd1305;
+    color: #fff;
+    /* text-transform: uppercase; */
+}
+
+.grocery-list .checked {
+    text-decoration: line-through;
+    /* background: #d8c498; */
+}
