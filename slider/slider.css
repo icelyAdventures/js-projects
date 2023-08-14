@@ -1,1 +1,102 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"Open Sans", sans-serif;
+    /* border: 1px solid red; */
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(farthest-corner at 50px 50px, #fff, #68ccda, #037a8a);;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider-container {
+    width: 80vw;
+    max-width: 50rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 1rem;
+    height: 50vh;
+    border: 0.5rem solid #163ba0;
+    
+}
+
+.slider-container .slide {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#fff,#163ba0);
+    color: #163ba0;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide .slide-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.slide .creeper-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    border: 0.3rem solid #000;
+}
+
+.slide h1 {
+    color: #fff;
+    font-size: 4rem;
+    position: absolute;
+    font-size: 5rem;
+}
+
+.slide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slide div h1 {
+    position: relative;
+}
+
+.btn-container {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container button {
+    height: 100%;
+    padding: 0 1rem;
+    margin: 0 0.3rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #163ba0;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.btn-container .hidden{
+    display: none;
+}
